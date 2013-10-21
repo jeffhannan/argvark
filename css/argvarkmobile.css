@@ -1,0 +1,140 @@
+/* Classes */
+.pageSectionTitle
+{
+border-style:ridge;
+background-color:#cfdfff;   /* Sky blue */
+padding-right:5px;
+padding-left:5px;
+font-weight:bold;
+//font-size:16; this is the default font-size
+}
+
+.pageSectionTopicChild
+{
+border-style:ridge;
+background-color:#ffdf7f;      /* Light orange */
+padding-right:5px;
+padding-left:5px;
+font-size:16;
+}
+
+.pageSectionTopicParent
+{
+border-style:ridge;
+background-color:#dfcfff;   /* Light purple */
+padding-right:5px;
+padding-left:5px;
+font-size:16;
+}
+
+.pageSectionTopicArgs
+{
+border-style:ridge;
+background-color:#dfff7f;    /* Light green */
+padding-right:5px;
+padding-left:5px;
+font-size:16;
+}
+
+.pageSectionCross
+{
+border-style:ridge;
+background-color:#ffdf7f;      /* Light orange */
+padding-right:5px;
+padding-left:5px;
+font-size:16;
+}
+
+.pageSectionBox
+{
+//border-style:ridge;
+}
+
+.pageSectionChild
+{
+border-style:ridge;
+background-color:#dfcfff;   /* Light purple */
+padding-right:5px;
+padding-left:5px;
+font-size:16;
+}
+
+.pageSectionParent
+{
+border-style:ridge;
+background-color:#dfff7f;    /* Light green */
+padding-right:5px;
+padding-left:5px;
+font-size:16;
+}
+
+.pageSectionCross2
+{
+border-style:ridge;
+background-color:#ffdfcf;      /* Light pink */
+font-size:16;
+}
+
+.argInput
+{
+width:300px;
+font-size:16;
+}
+
+/* IDs */
+/* The width of the arg entry */
+#argTitle
+{
+width:300px;
+font-size:16;
+}
+
+#topicName
+{
+font-weight:bold;
+font-size:16;
+}
+
+#argText
+{
+font-weight:bold;
+font-size:16;
+}
+
+#newArgTextInput
+{
+width:300px;
+font-size:16;
+}
+
+#newArgInTopicTextInput
+{
+width:200px;
+font-size:16;
+}
+
+.argLinksFrame
+{
+border-style:ridge;
+font-size:16;
+}
+
+.selectedTab
+{
+border-style:ridge;
+font-weight:bold;
+font-size:16;
+}
+
+.unselectedTab
+{
+border-style:none;
+font-size:16;
+}
+
+/* The class of arg links - ids are unique, so can't map those */
+.argLinks
+{
+width:300px;
+font-size:16;
+}

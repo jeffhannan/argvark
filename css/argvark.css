@@ -1,0 +1,116 @@
+/* Classes */
+.pageSectionTitle
+{
+border-style:ridge;
+background-color:#cfdfff;   /* Sky blue */
+padding-right:5px;
+padding-left:5px;
+font-weight:bold;
+}
+
+.pageSectionTopicChild
+{
+border-style:ridge;
+background-color:#ffdf7f;      /* Light orange */
+padding-right:5px;
+padding-left:5px;
+}
+
+.pageSectionTopicParent
+{
+border-style:ridge;
+background-color:#dfcfff;   /* Light purple */
+padding-right:5px;
+padding-left:5px;
+}
+
+.pageSectionTopicArgs
+{
+border-style:ridge;
+background-color:#dfff7f;    /* Light green */
+padding-right:5px;
+padding-left:5px;
+}
+
+.pageSectionCross
+{
+border-style:ridge;
+background-color:#ffdf7f;      /* Light orange */
+padding-right:5px;
+padding-left:5px;
+}
+
+.pageSectionBox
+{
+//border-style:ridge;
+}
+
+.pageSectionChild
+{
+border-style:ridge;
+background-color:#dfcfff;   /* Light purple */
+padding-right:5px;
+padding-left:5px;
+}
+
+.pageSectionParent
+{
+border-style:ridge;
+background-color:#dfff7f;    /* Light green */
+padding-right:5px;
+padding-left:5px;
+}
+
+.pageSectionCross2
+{
+border-style:ridge;
+background-color:#ffdfcf;      /* Light pink */
+}
+
+.argInput
+{
+width:500px;
+}
+
+/* IDs */
+/* The width of the arg entry */
+#argTitle
+{
+width:500px;
+}
+
+#topicName
+{
+font-weight:bold;
+}
+
+#argText
+{
+font-weight:bold;
+}
+
+#newArgTextInput
+{
+width:500px;
+}
+
+.argLinksFrame
+{
+border-style:ridge;
+}
+
+.selectedTab
+{
+border-style:ridge;
+}
+
+.unselectedTab
+{
+border-style:none;
+}
+
+/* The class of arg links - ids are unique, so can't map those */
+.argLinks
+{
+width:500px;
+}

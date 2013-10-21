@@ -1,0 +1,222 @@
+<html>
+<head>
+<script type="text/javascript" src="js/external/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="js/external/EventHandler.js"></script>
+<script type="text/javascript" src="js/Av2pConfig.js"></script>
+<script type="text/javascript" src="js/UtilsDebug.js"></script>
+<script type="text/javascript" src="js/Navigation.js"></script>
+<script type="text/javascript" src="js/Utils.js"></script>
+<script type="text/javascript" src="js/UtilsUrl.js"></script>
+<script type="text/javascript" src="js/UtilsHtml.js"></script>
+<script type="text/javascript" src="js/UtilsPage.js"></script>
+<script type="text/javascript" src="js/DataArg.js"></script>
+<script type="text/javascript" src="js/UtilsArg.js"></script>
+<script type="text/javascript" src="js/DataArgLinks.js"></script>
+<script type="text/javascript" src="js/UtilsArgLinks.js"></script>
+<script type="text/javascript" src="js/DataArgTopics.js"></script>
+<script type="text/javascript" src="js/UtilsArgTopics.js"></script>
+<script type="text/javascript" src="js/UtilsAddArgLink.js"></script>
+<script type="text/javascript" src="js/DataTopic.js"></script>
+<script type="text/javascript" src="js/UtilsTopic.js"></script>
+<script type="text/javascript" src="js/DataTopicLinks.js"></script>
+<script type="text/javascript" src="js/UtilsTopicLinks.js"></script>
+<script type="text/javascript" src="js/DataArgList.js"></script>
+<script type="text/javascript" src="js/UtilsArgList.js"></script>
+<script type="text/javascript" src="js/UtilsTabVisibility.js"></script>
+<script type="text/javascript" src="js/OneArg.js"></script>
+<script type="text/javascript" src="js/OneTopic.js"></script>
+<script type="text/javascript" src="js/TopicArgPage.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/argvarkmobile.css" />
+</head>
+<body>
+
+<!--navBar-->
+<div id="navBar">
+<button id="buttonTopicGraph">Topic</button>
+<button id="buttonTopicArgs">Arguments</button>
+<button id="buttonArgGraph">Selected Arg</button>
+</div>
+
+
+<!--tabTopicGraph-->
+<div id="tabTopicGraph">
+ 
+<div class="pageSectionTitle">
+<div id="topicNameTopicGraph">Loading Topic name</div>
+</div>
+
+<div class="pageSectionBox">
+
+<div class="pageSectionTopicChild">Sub-topics...
+
+<!-- page of sub-topics -->
+<span id="tabTopicGraphChildTopicList">
+<button id="tabTopicGraphChildTopicListPrev" type="button"><</button>
+ <span id="tabTopicGraphChildTopicListPage">0</span>
+<button id="tabTopicGraphChildTopicListNext" type="button">></button>
+</span> <!-- tabTopicGraphChildTopicList -->
+
+<span id="tabTopicGraphChildTopicsNone"></span>
+<div id="childTopics">Loading Child topics</div>
+<div>
++
+<input id='addChildTopicLinkName' type=text value="">
+</div>
+</div>
+
+<div class="pageSectionTopicParent">Topics that link here...
+
+<!-- page of topics that link here -->
+<span id="tabTopicGraphParentTopicList">
+<button id="tabTopicGraphParentTopicListPrev" type="button"><</button>
+ <span id="tabTopicGraphParentTopicListPage">0</span>
+<button id="tabTopicGraphParentTopicListNext" type="button">></button>
+</span> <!-- tabTopicGraphParentTopicList -->
+
+<span id="tabTopicGraphParentTopicsNone"></span>
+<div id="parentTopics">Loading Parent topics</div>
+<div>
++
+<input id='addParentTopicLinkName' type=text value="">
+</div>
+</div>
+
+</div><!--pageSectionBox-->
+
+<div class="pageSectionBox">
+
+<div class="pageSectionTopicArgs">
+Arguments...
+ 
+<!-- page of args -->
+<span id="tabTopicGraphArgList">
+<button id="tabTopicGraphArgListPrev" type="button"><</button>
+ <span id="tabTopicGraphArgListPage">0</span>
+<button id="tabTopicGraphArgListNext" type="button">></button>
+</span> <!-- tabTopicGraphArgList -->
+
+<span id="tabTopicGraphTopicArgsNone"></span>
+<div id="argListTopicGraph">Arg List not loaded</div>
+<!--<button id="newArgInTopicButton" type="button">Create New Argument</button> <!--button always visible-->
+<div id="newArgInTopicTextVisibility"> <!--text input box and Cancel button only visible when Create selected-->
+<!--<button id="newArgInTopicTextCancel" type="button">^</button>     -->
+<!--<div id="newArgInTopicButton">Create New Argument</div> -->
+<div id="newArgInTopicButton"></div>
++
+<input id="newArgInTopicTextInput" class="argInput" type="text"/>
+</div>
+
+</div>
+
+</div><!--pageSectionBox-->
+
+</div>
+<!--tabTopicGraph-->
+
+
+<!--tabTopicArgs-->
+<div id="tabTopicArgs"> 
+
+<div class="pageSectionTitle">
+<div id="topicNameTopicArgs">Loading Topic name</div>
+</div>
+
+<div class="pageSectionTopicArgs">
+
+<!-- page of args -->
+<span id="tabTopicArgsArgList">
+<button id="tabTopicArgsArgListPrev" type="button"><</button>
+ <span id="tabTopicArgsArgListPage">0</span>
+<button id="tabTopicArgsArgListNext" type="button">></button>
+</span> <!-- tabTopicArgsArgList -->
+
+<span id="tabTopicArgsTopicArgsNone"></span>
+<div id="argListTopicArgs">Arg List not loaded</div>
+<!--<div id="newArgInTopicButton2">Create New Argument</div>-->
+<div id="newArgInTopicButton2"></div>
++
+<input id="newArgInTopicTextInput2" class="argInput" type="text"/>
+</div>
+</div>
+<!--tabTopicArgs-->
+
+
+<!--tabArgGraph-->
+<div id="tabArgGraph"> 
+<div id="argText" class="pageSectionTitle"></div>
+<div id="argTopicsFrame" class="pageSectionCross">Tags...
+
+<!-- page of tags -->
+<span id="tabArgGraphTagList">
+<button id="tabArgGraphTagListPrev" type="button"><</button>
+ <span id="tabArgGraphTagListPage">0</span>
+<button id="tabArgGraphTagListNext" type="button">></button>
+</span> <!-- tabArgGraphTagList -->
+
+<span id="tabArgGraphTagsNone"></span>
+<span id="argTopics2">Arg Topics not loaded</span>
+<br>
+<!--<span id="addArgTopic">Add Arg Topic not loaded</span>
+<span id="addTopicTagNameVisibility">
+<button id='addTopicTagNameCancel'>Cancel</button>
+<input id='addTopicTagName' type=text value="">
+</span>-->
++<input id='addTopicTagName' type=text value="">
+</div>
+<div id="childArgLinksFrame" class="pageSectionChild">Sub-arguments...
+
+<!-- page of tags -->
+<span id="tabArgGraphChildArgList">
+<button id="tabArgGraphChildArgListPrev" type="button"><</button>
+ <span id="tabArgGraphChildArgListPage">0</span>
+<button id="tabArgGraphChildArgListNext" type="button">></button>
+</span> <!-- tabArgGraphChildArgList -->
+
+<span id="tabArgGraphChildArgLinksNone"></span>
+<div id="argLinks">Arg Links not loaded</div>
+<div id="newArgText">
+<!--Add new sub-argument (enter text)-->
++
+<input id="newArgTextInput" type="text"/>
+</div>
+<div id="existingArgText">
+<!--Link to existing argument (enter arg #)-->
++ (arg #)
+<input id="existingArgTextInput" type="text"/>
+</div>
+</div>
+<div id="parentArgLinksFrame" class="pageSectionParent">What links here...
+
+<!-- page of what links here -->
+<span id="tabArgGraphParentArgList">
+<button id="tabArgGraphParentArgListPrev" type="button"><</button>
+ <span id="tabArgGraphParentArgListPage">0</span>
+<button id="tabArgGraphParentArgListNext" type="button">></button>
+</span> <!-- tabArgGraphParentArgList -->
+
+<span id="tabArgGraphParentArgLinksNone"></span>
+<div id="argLinksBack">Arg Links Back not loaded</div>
+</div>
+<!--
+<div id="createChildLink" class="argLinksFrame">Create sub-argument...
+<div>
+<button id="newArgButton" type="button">Create new argument</button>
+<button id="existingArgButton" type="button">Link to existing argument</button>
+</div>
+<div id="createArgLink"></div>
+</div>
+<div id="existingArgText">
+<div>Link to existing argument (enter id)<br>
+<button id="existingArgTextCancel" type="button">Cancel</button>
+<input id="existingArgTextInput" type="text"/>
+</div>
+</div>
+-->
+
+</div>
+<!--tabArgGraph-->
+
+<div id="debugOutput">Debug Output goes here!</div>
+
+</html>
