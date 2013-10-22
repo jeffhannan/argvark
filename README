@@ -1,5 +1,12 @@
 Argvark - organise arguments
 
-Initial code commit. Details to follow soon. Won't run without the database.
+Initial code commit. Won't run without the database, so example database provided from www.argvark.org.
+
+The code is not ready, it needs a bit of a tidy up. I am committing it earlier than originally planned as I wanted to put it up before starting a new job, something which has happened unexpectedly. :-)
+
+My intention is to finish that tidying, then provide an explanation of what it is all about.
+
+Jeff Hannan
+
 
 
